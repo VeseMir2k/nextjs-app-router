@@ -1,4 +1,3 @@
-import { Menu } from "@/common/components/Menu";
 import { commonMetadata } from "@/common/components/shared-metadata";
 
 export const metadata = {
@@ -9,7 +8,6 @@ export const metadata = {
 export default function MainPage() {
   return (
     <div>
-      <Menu />
       <h1>Main Page</h1>
     </div>
   );
