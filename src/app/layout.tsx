@@ -1,4 +1,5 @@
 import { Menu } from "@/common/components/Menu";
+import "../styles/global.scss";
 
 type AppLayoutProps = {
   children: React.ReactNode;
@@ -14,7 +15,7 @@ export default function RootLayout({ children }: AppLayoutProps) {
     <html lang="en">
       <body>
         <Menu />
-        {children}
+        <main className="main-container"> {children}</main>
       </body>
     </html>
   );

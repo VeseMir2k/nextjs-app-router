@@ -1,18 +1,19 @@
 import Link from "next/link";
+import style from "./menu.module.scss";
 
 export function Menu() {
   return (
-    <ul>
-      <li>
+    <ul className={style.menu}>
+      <li className={style["menu-item"]}>
         <Link href="/">Home</Link>
       </li>
-      <li>
+      <li className={style["menu-item"]}>
         <Link href="/contact">Contact</Link>
       </li>
-      <li>
+      <li className={style["menu-item"]}>
         <Link href="/contact/team">Team</Link>
       </li>
-      <li>
+      <li className={style["menu-item"]}>
         <Link href="/contact/about-us">About us</Link>
       </li>
     </ul>

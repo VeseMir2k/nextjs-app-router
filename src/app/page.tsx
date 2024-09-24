@@ -1,4 +1,4 @@
-import { commonMetadata } from "@/common/components/shared-metadata";
+import { commonMetadata } from "@/common/shared-metadata";
 
 export const metadata = {
   title: `Main page ${commonMetadata.title}`,
