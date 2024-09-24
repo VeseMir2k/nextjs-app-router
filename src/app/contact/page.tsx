@@ -2,15 +2,15 @@ import { Menu } from "@/common/components/Menu";
 import { commonMetadata } from "@/common/components/shared-metadata";
 
 export const metadata = {
-  title: `Main page ${commonMetadata.title}`,
-  description: "this is main page",
+  title: `Contact ${commonMetadata.title}`,
+  description: "this is contact page",
 };
 
-export default function MainPage() {
+export default function ContactPage() {
   return (
     <div>
       <Menu />
-      <h1>Main Page</h1>
+      <h1>Contact</h1>
     </div>
   );
 }
