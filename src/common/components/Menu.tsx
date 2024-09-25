@@ -16,6 +16,9 @@ export function Menu() {
       <li className={style["menu-item"]}>
         <Link href="/contact/about-us">About us</Link>
       </li>
+      <li className={style["menu-item"]}>
+        <Link href="/posts">Posts</Link>
+      </li>
     </ul>
   );
 }
