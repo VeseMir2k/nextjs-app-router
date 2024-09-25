@@ -3,6 +3,7 @@ import style from "./posts.module.scss";
 import { commonMetadata } from "@/common/shared-metadata";
 import { Pagination } from "@/common/components/pagination/Pagination";
 import { SearchParams } from "@/types/NextTypes";
+import Link from "next/link";
 
 export const metadata = {
   title: `Posts ${commonMetadata.title}`,
@@ -19,6 +20,7 @@ export default async function PostsPage({ searchParams }: PostsPageProps) {
   if (searchParams?.page) {
     page = Number(searchParams?.page) || 1;
   }
+  console.log(searchParams);
 
   const res = await fetch(
     `http://localhost:3004/posts?_limit=${POSTS_PER_PAGE}&_page=${page}`,
@@ -40,6 +42,8 @@ export default async function PostsPage({ searchParams }: PostsPageProps) {
           key={post.id}
         >
           {post.title}
+          <br />
+          <Link href={`/posts/${post.id}`}>READ MORE</Link>
         </div>
       ))}
 
