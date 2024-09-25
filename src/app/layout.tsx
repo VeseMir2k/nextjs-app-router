@@ -1,4 +1,4 @@
-import { Menu } from "@/common/components/Menu";
+import { Menu } from "@/common/components/menu/Menu";
 import "../styles/global.scss";
 
 type AppLayoutProps = {

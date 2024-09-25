@@ -1,7 +1,7 @@
 import { Posts } from "@/types/Posts";
 import style from "./posts.module.scss";
 import { commonMetadata } from "@/common/shared-metadata";
-import { Pagination } from "@/common/components/Pagination";
+import { Pagination } from "@/common/components/pagination/Pagination";
 import { SearchParams } from "@/types/NextTypes";
 
 export const metadata = {
