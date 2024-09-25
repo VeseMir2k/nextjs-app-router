@@ -16,13 +16,13 @@ const POSTS_TOTAL = 60;
 
 export default async function PostsPage({ searchParams }: PostsPageProps) {
   let page = 1;
-
   if (searchParams?.page) {
     page = Number(searchParams?.page) || 1;
   }
 
   const res = await fetch(
     `http://localhost:3004/posts?_limit=${POSTS_PER_PAGE}&_page=${page}`,
+    { next: { revalidate: 5 } },
   );
 
   if (!res.ok) {
